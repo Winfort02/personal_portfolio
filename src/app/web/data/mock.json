@@ -1,0 +1,25 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "skillName": "Angular",
+      "imageLink": "angular.png",
+      "description": "For creating dynamic, single-page applications with a powerful component-based architecture and two-way data binding",
+      "duration": 36
+    },
+    {
+      "id": 2,
+      "skillName": "ASP.NET",
+      "imageLink": "asp-net.png",
+      "description": "For developing scalable and secure web APIs that integrate seamlessly with various client application",
+      "duration": 18
+    },
+    {
+      "id": 2,
+      "skillName": "Laravel",
+      "imageLink": "laravel.png",
+      "description": "For creating elegant and robust web APIs with an emphasis on clean code, simplicity, and scalability",
+      "duration": 18
+    }
+  ]
+}

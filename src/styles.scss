@@ -1,0 +1,94 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2px;
+}
+.letter-spacing-3 {
+  letter-spacing: 3px;
+}
+.letter-spacing-4 {
+  letter-spacing: 4px;
+}
+
+.p-toolbar {
+  padding: 0;
+  justify-content: start;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  background-color: var(--teal-500);
+
+  .p-toolbar-group-start {
+    width: 25%;
+  }
+
+  .p-toolbar-group-end {
+    width: 68%;
+    display: flex;
+    justify-content: space-evenly;
+    a {
+      &:hover {
+        color: white !important;
+      }
+    }
+  }
+}
+
+.banner-images-container {
+  @media (max-width: 768px) {
+    display: none !important;
+  }
+}
+
+p-card {
+  .p-card-body {
+    .p-card-content {
+      padding: 0;
+    }
+  }
+}
+
+.p-image.p-component.p-image-preview-container {
+  height: 100%;
+}
+
+.curve-top-left {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--teal-500);
+  opacity: 0.9;
+  z-index: -1;
+  clip-path: circle(25% at 0 0);
+}
+
+.curve-bottom-right {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--teal-500);
+  opacity: 0.9;
+  z-index: -1;
+  clip-path: circle(25% at 100% 100%);
+}

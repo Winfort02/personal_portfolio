@@ -1,0 +1,43 @@
+<div
+  class="flex flex-column justify-content-start alig-items-center p-0 width-full"
+>
+  @defer(when !isLoading()) {
+  <div class="web-toolbar" id="web-toolbar">
+    <app-toolbar />
+  </div>
+  <!--web banner section-->
+  <div class="web-banner" id="web-banner">
+    <app-banner />
+  </div>
+  <!-- web about section-->
+  <div class="web-about" id="web-about">
+    <app-about />
+  </div>
+  <!--web skills section-->
+  <div class="web-skill" id="web-skill">
+    <app-skill />
+  </div>
+  <!--web education section-->
+  <div class="web-education" id="web-education">
+    <app-educations />
+  </div>
+  <div class="web-experience" id="web-experience">
+    <app-experience />
+  </div>
+  <!--web project section-->
+  <div class="web-project" id="web-project">
+    <app-project />
+  </div>
+  <!--web tools section-->
+  <div class="web-tool" id="web-tool">
+    <app-tools />
+  </div>
+  <!--web footer-->
+  <div class="web-footer" id="web-footer">
+    <app-footer />
+  </div>
+  } @placeholder {
+  <app-skeleton />
+  }
+  <p-scrollTop icon="pi pi-arrow-up" styleClass="bg-teal-500" />
+</div>

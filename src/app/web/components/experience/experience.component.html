@@ -1,0 +1,81 @@
+<app-web-container [icon]="'pi-history'" [label]="'Experiences'">
+  <div class="flex flex-wrap justify-content-start align-items-stretch col-12">
+    @for (experience of storeService.experiences(); track $index) {
+    <div
+      class="flex col-12 xs:col-12 sm:col-12 md:col-12 lg:col-4 xl:col-3 w-100"
+    >
+      <div
+        class="border-round shadow-4 p-5 animation-duration-1000 relative w-full"
+        [ngClass]="{
+          flipleft: selected[$index] == $index,
+          flipright: selected[$index] != $index
+        }"
+      >
+        @if (selected[$index] != $index) {
+        <div class="curve-bottom-right border-round"></div>
+        } @else {
+        <div class="curve-top-left border-round"></div>
+        }
+        <div class="flex justify-content-between align-items-center p-0">
+          <p class="m-0 font-bold uppercase text-500 text-sm">
+            {{
+              selected[$index] != $index
+                ? experience.companyName
+                : "Resposibilities"
+            }}
+          </p>
+          <p class="m-0 cursor-pointer" (click)="onShowProject($index)">
+            <i
+              class="pi text-teal-500 text-2xl"
+              [ngClass]="{
+                'pi-angle-left': selected[$index] == $index,
+                'pi-angle-right': selected[$index] != $index
+              }"
+            ></i>
+          </p>
+        </div>
+        <div class="">
+          @if (selected[$index] != $index) {
+          <ng-container>
+            <div class="animation-duration-2000 max-4rem">
+              <p class="text-sm text-600">
+                {{ experience.position }}
+              </p>
+              <p class="text-sm text-600">
+                {{ experience.dateAttended }}
+              </p>
+            </div>
+          </ng-container>
+          } @else {
+          <ng-container>
+            <div class="flipleft animation-duration-2000">
+              <ul class="overflow-hidden max-h-2rem list-none px-0 mt-1">
+                @for(job of experience.responsibilty.job; track job.id){
+                <li class="text-sm text-600">{{ job.task }}</li>
+                }
+              </ul>
+
+              <div class="see-more">
+                <p
+                  class="m-1 text-blue-800 cursor-pointer"
+                  (click)="onShowExperienceDetail(experience.id)"
+                >
+                  See more
+                  <i class="pi pi-window-maximize text-blue-800 px-2"></i>
+                </p>
+              </div>
+            </div>
+          </ng-container>
+          }
+        </div>
+      </div>
+    </div>
+    } @empty {
+    <div
+      class="col-12 flex justify-content-center align-items-center border-round shadow-4"
+    >
+      <p>No Experience yet .</p>
+    </div>
+    }
+  </div>
+</app-web-container>

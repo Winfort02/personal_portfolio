@@ -1,0 +1,10 @@
+.technologies {
+  box-sizing: border-box;
+  height: 8rem;
+}
+
+@media screen and (max-width: 678px) {
+  .technologies {
+    height: 6rem;
+  }
+}

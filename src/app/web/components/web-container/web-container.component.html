@@ -1,0 +1,28 @@
+<div class="col-12 w-full flex justify-content-center alig-items-center">
+  <div
+    class="flex col-12 sm:col-12 md:col-10 lg:col-10 xl:col-10 {{
+      flexLayout
+    }} justify-content-center alig-items-center gap-2"
+  >
+    <div class="col-12 flex justify-content-start alig-items-center gap-2">
+      <h2 class="flex justify-content-start align-items-center">
+        <p class="">
+          <i
+            class="pi {{ icon }} {{
+              iconColor
+            }} text-md sm:text-md md:text-lg lg:text-xl xl:text-3xl pr-4"
+          >
+          </i>
+        </p>
+        <p
+          class="font-bold text-md sm:text-md md:text-lg lg:text-xl xl:text-4xl {{
+            textColor
+          }} uppercase letter-spacing-4"
+        >
+          {{ label }}
+        </p>
+      </h2>
+    </div>
+    <ng-content></ng-content>
+  </div>
+</div>

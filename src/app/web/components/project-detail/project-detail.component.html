@@ -1,0 +1,32 @@
+@defer (when !isLoading) {
+<app-toolbar></app-toolbar>
+<div
+  class="col-12 flex align-items-center justify-content-center w-full surface-200 py-0"
+>
+  <div
+    class="col-10 flex flex-column align-items-center justify-content-start bg-white min-h-screen"
+  >
+    <div class="col-12 mb-5 w-full">
+      <div class="flex justify-content-between alig-items-center">
+        <p class="px-5 text-500 text-2xl uppercase letter-spacing-2">
+          {{ project.projectName }}
+        </p>
+        <div class="flex justify-content-start align-items-center w-5rem">
+          <p-button
+            icon="pi pi-arrow-left"
+            size="small"
+            severity="secondary"
+            (onClick)="onBack()"
+          />
+        </div>
+      </div>
+      <p class="px-5 m-0 text-500 text-md uppercase letter-spacing-2">
+        Duration: {{ project.duration }} months
+      </p>
+    </div>
+  </div>
+</div>
+<app-footer />
+} @placeholder {
+<app-skeleton></app-skeleton>
+}

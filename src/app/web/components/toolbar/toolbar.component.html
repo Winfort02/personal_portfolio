@@ -1,0 +1,26 @@
+<div class="card">
+  <p-toolbar class="surface-200">
+    <div class="col-12 flex justify-content-center alig-items-center w-full">
+      <div
+        class="col-12 sm:col-12 md:col-10 lg:col-12 xl:col-10 flex justify-content-start sm:justify-content-start md:justify-content-start lg:justify-content-center xl:justify-content-center alig-items-center"
+      >
+        <div class="p-toolbar-group-start">
+          <h3>PORFOLIO</h3>
+        </div>
+        <div
+          class="p-toolbar-group-end hidden sm:hidden md:hidden lg:flex xl:flex"
+        >
+          @for (item of items(); track item;) {
+          <a
+            class="cursor-pointer no-underline text-lg text-700"
+            [routerLink]="item.link"
+            [fragment]="item.fragment"
+          >
+            {{ item.label }}
+          </a>
+          }
+        </div>
+      </div>
+    </div>
+  </p-toolbar>
+</div>

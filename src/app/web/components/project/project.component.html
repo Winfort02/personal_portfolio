@@ -1,0 +1,49 @@
+@defer (when storeService.projects().length) {
+<app-web-container [icon]="'pi-briefcase'" [label]="'Projects'">
+  <div class="col-12 w-full" [style]="{ height: '350px' }">
+    <div class="col-12 bg-teal-500 h-8rem border-round">
+      <div class="w-full h-20rem">
+        <p-carousel
+          [value]="storeService.projects()"
+          [numVisible]="4"
+          [numScroll]="3"
+          [circular]="true"
+          [responsiveOptions]="responsiveOptions()"
+          [indicatorsContentClass]="'p-0'"
+          [showIndicators]="false"
+        >
+          <ng-template let-project pTemplate="item">
+            <div class="m-2 p-3">
+              <div class="mb-3">
+                <div class="relative mx-auto">
+                  <img
+                    src="assets/images/{{ project.imageLink }}"
+                    [alt]="project.projectName"
+                    class="w-full border-round border-teal-500 border-bottom-3 shadow-2"
+                  />
+                </div>
+              </div>
+              <div class="mb-3 font-medium line-height-3 px-1">
+                <div class="flex justify-content-between alig-items-center">
+                  <p class="m-0 text-600 font-bold uppercase">
+                    {{ project.projectName }}
+                  </p>
+                  <p
+                    class="m-0 text-xs text-teal-500 cursor-pointer"
+                    (click)="onNavigateToProjectDetail(project.id)"
+                  >
+                    <i class="pi pi-window-maximize text-teal-500 text-lg"></i>
+                  </p>
+                </div>
+                <p class="m-0 text-600 text-xs w-100">
+                  {{ project.duration }} month's of development
+                </p>
+              </div>
+            </div>
+          </ng-template>
+        </p-carousel>
+      </div>
+    </div>
+  </div>
+</app-web-container>
+}

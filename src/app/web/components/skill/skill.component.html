@@ -1,0 +1,40 @@
+<div class="col-12 bg-teal-500">
+  <div class="col-12 xs:col-12 sm:col-12 md:col-12 lg:col-10 xl:col-10 mx-auto">
+    <div class="card">
+      <p-carousel
+        [value]="storeService.skills()"
+        [numVisible]="4"
+        [numScroll]="3"
+        [circular]="true"
+        [indicatorsContentClass]="'p-0'"
+        [responsiveOptions]="responsiveOptions()"
+        [showIndicators]="showIndecators()"
+      >
+        <ng-template let-skill pTemplate="item">
+          <div class="m-2 p-3">
+            <div class="mb-3">
+              <div class="relative mx-auto">
+                <img
+                  src="assets/images/{{ skill.imageLink }}"
+                  [alt]="skill.skillName"
+                  class="w-full h-12rem border-round shadow-2"
+                />
+              </div>
+            </div>
+            <div class="mb-3 font-medium line-height-3 px-1">
+              <p class="m-0 text-600 font-bold uppercase">
+                {{ skill.skillName }}
+              </p>
+              <p class="text-600 text-sm">
+                {{ skill.description }}
+              </p>
+              <p class="m-0 text-600 text-xs">
+                {{ skill.duration }} month's experience
+              </p>
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+  </div>
+</div>

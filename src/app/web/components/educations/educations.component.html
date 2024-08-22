@@ -1,0 +1,66 @@
+<app-web-container [icon]="'pi-graduation-cap'" [label]="'Achievements'">
+  <div
+    class="col-12 flex justify-content-between alig-items-center flex-column sm:flex-column md:flex-column lg:flex-row xl:flex-row"
+  >
+    <div class="col-12 xs:col-12 sm:col-12 md:col-12 lg:col-4 xl:col-4">
+      <p class="text-500 text-xl px-3">Awards / Certifications</p>
+      <div class="col-12 flex flex-column">
+        @for(award of storeService.achievement().awards; track $index){
+        <div class="col-12 text-500">
+          <p class="m-0">{{ award.year }}</p>
+          <p class="my-1 font-bold">{{ award.award }}</p>
+          <p class="m-0 text-xs">{{ award.issuer }}</p>
+        </div>
+        } @empty {
+        <div class="col-12 text-500">
+          <p>No Achievement at the moment</p>
+        </div>
+        }
+      </div>
+    </div>
+    <div class="col-12 xs:col-12 sm:col-12 md:col-12 lg:col-8 xl:col-8">
+      <p class="text-500 text-xl px-3">Educations</p>
+      @for(education of storeService.achievement().educations; track $index) {
+      <div class="col-12">
+        <div class="card flex justify-content-center shadow-2 w-full">
+          <p-card class="w-full border-teal-500 border-left-3 border-right-3">
+            <div
+              class="col-12 flex flex-column sm:flex-column md:flex-row lg:flex-row xl:flex-row alig-items-center"
+            >
+              <div
+                class="col-12 xs:col-12 sm:col-12 md:col-3 lg:col-3 xl:col-3"
+              >
+                <p class="m-0 font-bold">{{ education.category }}</p>
+              </div>
+              <div
+                class="col-12 xs:col-12 sm:col-12 md:col-6 lg:col-6 xl:col-6"
+              >
+                <p class="m-0">{{ education.schoolName }}</p>
+              </div>
+              <div
+                class="col-12 xs:col-12 sm:col-12 md:col-3 lg:col-3 xl:col-3 flex justify-content-start sm:justify-content-start md:justify-content-center xl:justify-content-center"
+              >
+                <p class="m-0">{{ education.yearAttended }}</p>
+              </div>
+            </div>
+          </p-card>
+        </div>
+      </div>
+      } @empty {
+      <div class="col-12">
+        <div class="card flex justify-content-center shadow-2 w-full">
+          <p-card class="w-full border-teal-500 border-left-3 border-right-3">
+            <div
+              class="col-12 flex flex-column sm:flex-column md:flex-row lg:flex-row xl:flex-row alig-items-center"
+            >
+              <div class="col-12">
+                <p class="m-0 font-bold text-center">No education record</p>
+              </div>
+            </div>
+          </p-card>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</app-web-container>

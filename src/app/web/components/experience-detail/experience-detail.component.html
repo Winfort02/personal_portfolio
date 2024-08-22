@@ -1,0 +1,94 @@
+@defer (when !isLoaded()) {
+<app-toolbar></app-toolbar>
+<div
+  class="col-12 flex flex-column justify-content-center align-items-center surface-200 py-0"
+  id="web-experience-detail"
+>
+  <div
+    class="col-12 sm:col-12 md:col-10 lg:col-10 xl:col-10 flex flex-column justify-content-start align-items-center bg-white min-h-screen"
+  >
+    <div class="col-12 mb-5">
+      <div class="flex justify-content-between alig-items-center">
+        <p class="px-5 text-500 text-2xl uppercase letter-spacing-2">
+          {{ experience().companyName }}
+        </p>
+        <div class="flex justify-content-start align-items-center w-5rem">
+          <p-button
+            icon="pi pi-arrow-left"
+            size="small"
+            severity="secondary"
+            (onClick)="onBack()"
+          />
+        </div>
+      </div>
+      <p class="px-5 mb-1 text-500 text-md uppercase letter-spacing-2">
+        {{ experience().position }}
+      </p>
+      <p class="m-0 px-5 text-500">
+        <small> {{ experience().dateAttended }}</small>
+      </p>
+    </div>
+
+    <div
+      class="col-12 flex justify-content-start align-items-stretch flex-wrap mb-5"
+    >
+      <div class="flex col-12 sm:col-12 md:col-12 lg:col-4 xl:col-4 px-5">
+        <div class="col-12 surface-200 border-round">
+          <p class="text-center text-600 mb-5">Job Description</p>
+          <div class="w-full">
+            <ul class="list-none px-3 sm:px-3 md:px-3 lg:px-4 xl:px-5">
+              @for(job of experience().responsibilty.job; track job.id) {
+              <li>
+                <p class="text-500">{{ job.task }}</p>
+              </li>
+              }
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flex col-12 sm:col-12 md:col-12 lg:col-4 xl:col-4 px-5">
+        <div class="col-12 surface-200 border-round">
+          <p class="text-center text-600">Tools</p>
+          <div
+            class="col-12 flex justify-content-start align-items-stretch flex-wrap"
+          >
+            @for(tool of experience().responsibilty.tools; track tool.id) {
+            <div class="col-6 flex">
+              <img
+                src="assets/images/{{ tool.imageLink }}"
+                alt="tool-image"
+                class="w-full h-full border-round"
+              />
+            </div>
+            }
+          </div>
+        </div>
+      </div>
+      <div class="flex col-12 sm:col-12 md:col-12 lg:col-4 xl:col-4 px-5">
+        <div
+          class="col-12 surface-200 flex flex-column align-items-stretch justify-content-start"
+        >
+          <p class="text-center text-600">Technologies</p>
+          <div
+            class="col-12 flex flex-row justify-content-start align-items-stretch flex-wrap"
+          >
+            @for(tool of experience().responsibilty.technologies; track tool.id)
+            {
+            <div class="col-6 flex justify-content-start w-100">
+              <img
+                src="assets/images/{{ tool.imageLink }}"
+                alt="tool-image"
+                class="w-full h-100 border-round"
+              />
+            </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+} @placeholder {
+<app-skeleton />
+}

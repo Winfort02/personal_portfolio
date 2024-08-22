@@ -1,0 +1,25 @@
+.banner-divider {
+  overflow: hidden;
+  position: relative;
+}
+.banner-divider::before {
+  content: "";
+  font-family: "";
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -1.1vw;
+  right: -0.1vw;
+  top: -25%;
+  background-size: 185% 369px;
+  background-position: 0% 0%;
+  background-image: url("./../../../../assets/images/curve.svg");
+}
+
+@media (min-width: 2100px) {
+  .banner-divider::before {
+    background-size: 185% calc(2vw + 369px);
+  }
+}

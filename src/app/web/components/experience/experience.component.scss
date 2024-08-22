@@ -1,0 +1,10 @@
+.see-more {
+  &:hover {
+    p {
+      color: var(--teal-500) !important;
+    }
+    i {
+      color: var(--teal-500) !important;
+    }
+  }
+}

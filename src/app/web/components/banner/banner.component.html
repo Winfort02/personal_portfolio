@@ -1,0 +1,67 @@
+<div
+  class="flex justify-content-center align-items-center bg-teal-500 col-12"
+  [style]="{ height: '500px' }"
+>
+  <div
+    class="col-12 sm:col-12 md:col-10 lg:col-12 xl:col-10 flex justify-content-center align-items-center gap-2"
+  >
+    <div
+      class="flex col-12 xs:col-12 sm:col-12 md:col-12 lg:col-6 xl:col-8 flex-column align-items-start justify-content-center py-0"
+    >
+      <div class="w-full">
+        <p class="text-lg m-0 letter-spacing-3">Hi, I'm</p>
+        <p
+          class="text-2xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl mt-0 mb-1 font-bold text-white letter-spacing-4"
+        >
+          {{ storeService.personalDetail().name }}
+        </p>
+        <p class="text-md sm:text-md md:text-md lg:text-lg xl:text-lg">
+          Senior Fullstack Developer | UI/UX Enthusiast | Creative Coder
+        </p>
+        <p
+          class="w-11 text-md sm:text-md md:text-lg lg:text-lg xl:text-lg text-700 letter-spacing-1"
+        >
+          Crafting seamless user experiences with clean code and innovative
+          design. Explore My Portfolio to see how I blend creativity with
+          technology to deliver top-notch web solutions. Let’s collaborate to
+          turn your vision into a dynamic digital reality!
+        </p>
+      </div>
+      <div class="block p-0">
+        <ul
+          class="flex align-items-center justify-content-start gap-3 px-2 py-0 list-none"
+        >
+          <li>
+            <i class="pi pi-facebook text-white text-2xl cursor-pointer"></i>
+          </li>
+          <li>
+            <i class="pi pi-linkedin text-white text-2xl cursor-pointer"></i>
+          </li>
+          <li>
+            <i class="pi pi-github text-white text-2xl cursor-pointer"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="mt-2">
+        <button
+          pButton
+          pRipple
+          label="REQUEST CV"
+          class="p-button-primary p-button-sm w-10rem"
+        ></button>
+      </div>
+    </div>
+    <div
+      class="flex col-3 justify-content-start align-items-center sm:hidden md:hidden lg:block xl:block banner-images-container"
+    >
+      <img
+        src="assets/images/{{ storeService.personalDetail().imageLink }}"
+        alt="banner-image"
+        class="w-19rem h-20rem border-none border-circle shadow-2"
+      />
+    </div>
+  </div>
+</div>
+<div
+  class="banner-divider h-13rem relative hidden sm:hidden md:block lg:block xl:block"
+></div>

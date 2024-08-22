@@ -1,0 +1,504 @@
+{
+  "portfolio": {
+    "personalDetail": {
+      "name": "Jerwin Fortillano",
+      "phone": "09205643021",
+      "email": "winfort02@gmail.com",
+      "address": "Silay City Negros Occidental",
+      "country": "Philippines",
+      "gender": "Male",
+      "bio": "I am a Senior Fullstack Engineer with extensive expertise building frontend applications using Frontend Frameworks and crafting robust backend systems with ASP.NET, Node.js, and Laravel. Over the past four years, I have honed my skills in building dynamic, user-centric applications and scalable backend solutions. My career started at Human Incubator Inc, where I quickly progressed through roles at uBind and Accenture Inc, mastering the integration of diverse technologies. Currently, I work complex projects at Accenture Inc, mentor junior developers, and focus on delivering high-performance solutions. I am dedicated to writing clean, efficient code, committed to continuous learning, and actively involved in community and volunteer activities.",
+      "imageLink": "banner-image.png"
+    },
+    "skills": [
+      {
+        "id": 1,
+        "skillName": "Angular",
+        "imageLink": "angular.png",
+        "description": "For creating dynamic, single-page applications with a powerful component-based architecture and two-way data binding",
+        "duration": 36
+      },
+      {
+        "id": 2,
+        "skillName": "ASP.NET",
+        "imageLink": "asp-net.png",
+        "description": "For developing scalable and secure web APIs that integrate seamlessly with various client application",
+        "duration": 18
+      },
+      {
+        "id": 2,
+        "skillName": "Laravel",
+        "imageLink": "laravel.png",
+        "description": "For creating elegant and robust web APIs with an emphasis on clean code, simplicity, and scalability",
+        "duration": 18
+      },
+      {
+        "id": 3,
+        "skillName": "NodeJs",
+        "imageLink": "nodejs.png",
+        "description": "For building high-performance, scalable web APIs with a focus on non-blocking, event-driven architecture",
+        "duration": 18
+      },
+      {
+        "id": 4,
+        "skillName": "MySQL",
+        "imageLink": "mysql.png",
+        "description": "For managing and querying relational databases with structured, efficient, and reliable data handling",
+        "duration": 42
+      },
+      {
+        "id": 5,
+        "skillName": "VueJS",
+        "imageLink": "vuejs.png",
+        "description": "For developing reactive, component-based user interfaces with a focus on simplicity and flexibility in single-page applications",
+        "duration": 8
+      },
+      {
+        "id": 6,
+        "skillName": "ReactJS",
+        "imageLink": "reactjs.png",
+        "description": "For building interactive and dynamic user interfaces with a component-based architecture and efficient state management",
+        "duration": 12
+      },
+      {
+        "id": 7,
+        "skillName": "PrimeNG",
+        "imageLink": "primeng.png",
+        "description": "For designing rich, interactive user interfaces with a comprehensive set of UI components for Angular applications",
+        "duration": 36
+      },
+      {
+        "id": 8,
+        "skillName": "Angular Material",
+        "imageLink": "angular-material.png",
+        "description": "For crafting modern, responsive user interfaces with a set of Angular components that adhere to Material Design principles",
+        "duration": 36
+      },
+      {
+        "id": 9,
+        "skillName": "Git",
+        "imageLink": "git.png",
+        "description": "For managing code versions and collaboration with a robust version control system that streamlines workflows and ensures seamless integration across development teams",
+        "duration": 48
+      }
+    ],
+    "achievement": {
+      "awards": [
+        {
+          "id": 1,
+          "year": "2020",
+          "award": "Best Web Design",
+          "issuer": "NOLITC"
+        },
+        {
+          "id": 2,
+          "year": "2024",
+          "award": "Certified Frontend Developer",
+          "issuer": "ACCENTURE SONG"
+        }
+      ],
+      "educations": [
+        {
+          "id": 1,
+          "category": "Primary",
+          "schoolName": "Barangay Bubog Elementary School (BES)",
+          "yearAttended": "2002 - 2008"
+        },
+        {
+          "id": 2,
+          "category": "Secondary",
+          "schoolName": "Dona Montserrat Lopez Memorial High School (DMLMHS)",
+          "yearAttended": "2008 - 2012"
+        },
+        {
+          "id": 3,
+          "category": "Tertiary",
+          "schoolName": "Carlos Hilado Memorial State University (CHMSU)",
+          "yearAttended": "2016 - 2020"
+        }
+      ]
+    },
+    "experiences": [
+      {
+        "id": 1,
+        "companyName": "Freelancer",
+        "position": "Junior Fullstack Developer",
+        "dateAttended": "Febuary 2021 - Sept 2021",
+        "responsibilty": {
+          "job": [
+            {
+              "id": 1,
+              "task": "Developing and Maintaining Frontend and Backend code"
+            },
+            {
+              "id": 2,
+              "task": "Collaborating with Team Members"
+            },
+            {
+              "id": 3,
+              "task": "Testing and Debugging"
+            },
+            {
+              "id": 4,
+              "task": "Learning and Applying New Technologies"
+            },
+            {
+              "id": 5,
+              "task": "Writing Documentation"
+            }
+          ],
+          "tools": [
+            {
+              "id": 1,
+              "imageLink": "xampp.png"
+            },
+            {
+              "id": 2,
+              "imageLink": "backlog.png"
+            },
+            {
+              "id": 3,
+              "imageLink": "vscode.png"
+            },
+            {
+              "id": 4,
+              "imageLink": "postman.png"
+            },
+            {
+              "id": 5,
+              "imageLink": "messaging.png"
+            }
+          ],
+          "technologies": [
+            {
+              "id": 1,
+              "imageLink": "laravel.png"
+            },
+            {
+              "id": 2,
+              "imageLink": "angular.png"
+            },
+            {
+              "id": 3,
+              "imageLink": "primeng.png"
+            },
+            {
+              "id": 4,
+              "imageLink": "git.png"
+            },
+            {
+              "id": 5,
+              "imageLink": "mysql.png"
+            }
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "companyName": "Human Incubator Inc",
+        "position": "Senior Software Engineer",
+        "dateAttended": "Sept 2021 - March 2023",
+        "responsibilty": {
+          "job": [
+            {
+              "id": 6,
+              "task": "Architecting and Designing Systems"
+            },
+            {
+              "id": 7,
+              "task": "Code Review and Quality Assurance"
+            },
+            {
+              "id": 8,
+              "task": "Technical Leadership and Mentorship"
+            },
+            {
+              "id": 9,
+              "task": "Project Management and Coordination"
+            },
+            {
+              "id": 10,
+              "task": "Troubleshooting and Problem Solving"
+            }
+          ],
+          "tools": [
+            {
+              "id": 6,
+              "imageLink": "mssql.png"
+            },
+            {
+              "id": 7,
+              "imageLink": "backlog.png"
+            },
+            {
+              "id": 8,
+              "imageLink": "vscode.png"
+            },
+            {
+              "id": 9,
+              "imageLink": "postman.png"
+            },
+            {
+              "id": 19,
+              "imageLink": "messaging.png"
+            },
+            {
+              "id": 11,
+              "imageLink": "visualstudio.png"
+            }
+          ],
+          "technologies": [
+            {
+              "id": 6,
+              "imageLink": "laravel.png"
+            },
+            {
+              "id": 7,
+              "imageLink": "angular.png"
+            },
+            {
+              "id": 8,
+              "imageLink": "primeng.png"
+            },
+            {
+              "id": 9,
+              "imageLink": "git.png"
+            },
+            {
+              "id": 10,
+              "imageLink": "mysql.png"
+            },
+            {
+              "id": 11,
+              "imageLink": "asp-net.png"
+            },
+            {
+              "id": 12,
+              "imageLink": "vuejs.png"
+            },
+            {
+              "id": 12,
+              "imageLink": "angular-material.png"
+            }
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "companyName": "uBind",
+        "position": "Senior Web Developer",
+        "dateAttended": "March 2023 - July 2023",
+        "responsibilty": {
+          "job": [
+            {
+              "id": 11,
+              "task": "Advanced Web Architecture and Design"
+            },
+            {
+              "id": 12,
+              "task": "Code Quality and Best Practices"
+            },
+            {
+              "id": 13,
+              "task": "Technical Leadership and Mentoring"
+            },
+            {
+              "id": 14,
+              "task": "Project Planning and Collaboration"
+            },
+            {
+              "id": 15,
+              "task": "Troubleshooting and Optimization"
+            }
+          ],
+          "tools": [
+            {
+              "id": 12,
+              "imageLink": "jira.png"
+            },
+            {
+              "id": 13,
+              "imageLink": "vscode.png"
+            },
+            {
+              "id": 14,
+              "imageLink": "thunderclient.png"
+            },
+            {
+              "id": 15,
+              "imageLink": "messaging.png"
+            },
+            {
+              "id": 16,
+              "imageLink": "visualstudio.png"
+            }
+          ],
+          "technologies": [
+            {
+              "id": 13,
+              "imageLink": "angular.png"
+            },
+            {
+              "id": 14,
+              "imageLink": "angular-material.png"
+            },
+            {
+              "id": 15,
+              "imageLink": "git.png"
+            },
+            {
+              "id": 16,
+              "imageLink": "asp-net.png"
+            }
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "companyName": "Accenture Inc",
+        "position": "Advanced App Engineering Sr Analyst",
+        "dateAttended": "July 2023 - Current",
+        "responsibilty": {
+          "job": [
+            {
+              "id": 16,
+              "task": "Advanced Application Design and Analysis"
+            },
+            {
+              "id": 17,
+              "task": "Requirements Gathering and Specification"
+            },
+            {
+              "id": 18,
+              "task": "Solution Architecture and Integration"
+            },
+            {
+              "id": 19,
+              "task": "Technical Leadership and Problem Solving"
+            },
+            {
+              "id": 20,
+              "task": "Mentoring and Knowledge Sharing"
+            }
+          ],
+          "tools": [
+            {
+              "id": 17,
+              "imageLink": "azure.png"
+            },
+            {
+              "id": 18,
+              "imageLink": "vscode.png"
+            },
+            {
+              "id": 19,
+              "imageLink": "postman.png"
+            },
+            {
+              "id": 20,
+              "imageLink": "messaging.png"
+            },
+            {
+              "id": 21,
+              "imageLink": "intelliJ.png"
+            }
+          ],
+          "technologies": [
+            {
+              "id": 17,
+              "imageLink": "angular.png"
+            },
+            {
+              "id": 18,
+              "imageLink": "angular-material.png"
+            },
+            {
+              "id": 19,
+              "imageLink": "primeng.png"
+            },
+            {
+              "id": 20,
+              "imageLink": "git.png"
+            }
+          ]
+        }
+      }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "projectName": "Inventory System",
+        "imageLink": "ims-project.png",
+        "duration": 12
+      },
+      {
+        "id": 2,
+        "projectName": "Barangay Portal",
+        "imageLink": "ims-project.png",
+        "duration": 12
+      },
+      {
+        "id": 3,
+        "projectName": "Student Portal",
+        "imageLink": "ims-project.png",
+        "duration": 6
+      },
+      {
+        "id": 4,
+        "projectName": "Personal Portfolio",
+        "imageLink": "ims-project.png",
+        "duration": 1
+      }
+    ],
+    "tools": [
+      {
+        "id": 1,
+        "imageLink": "vscode.png"
+      },
+      {
+        "id": 2,
+        "imageLink": "visualstudio.png"
+      },
+      {
+        "id": 3,
+        "imageLink": "intelliJ.png"
+      },
+      {
+        "id": 4,
+        "imageLink": "xampp.png"
+      },
+      {
+        "id": 5,
+        "imageLink": "workbench.png"
+      },
+      {
+        "id": 6,
+        "imageLink": "mssql.png"
+      },
+      {
+        "id": 7,
+        "imageLink": "jira.png"
+      },
+      {
+        "id": 8,
+        "imageLink": "azure.png"
+      },
+      {
+        "id": 9,
+        "imageLink": "backlog.png"
+      },
+      {
+        "id": 10,
+        "imageLink": "postman.png"
+      },
+      {
+        "id": 11,
+        "imageLink": "thunderclient.png"
+      },
+      {
+        "id": 12,
+        "imageLink": "messaging.png"
+      }
+    ]
+  }
+}
